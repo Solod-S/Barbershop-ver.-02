@@ -1,0 +1,457 @@
+:root {
+  --primary-text-banner-color: #ffffff;
+  --primary-title-subtitle-color: #303030;
+  --secondary-text-banner-color-transparent: rgba(157, 164, 189, 0.6);
+  --secondary-text-banner-color: #9da4bd;
+  --primary-text-color: #555555;
+
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary-title-subtitle-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------HEADER------------------------------------------------------------------------- */
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus,
+.header-btn:hover,
+.header-btn:focus {
+  color: var(--accent-color);
+}
+
+.header {
+  background-color: grey;
+}
+.header-logo {
+}
+.header-nav {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+.header-list {
+}
+.header-item {
+}
+
+.header-link {
+  color: var(--primary-text-banner-color);
+}
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--primary-text-banner-color);
+}
+.header-btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  color: var(--primary-text-banner-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+/* -------------------------------------------------------------------------HERO------------------------------------------------------------------------- */
+
+.hero {
+  background-color: grey;
+}
+.hero-list {
+}
+.hero-item {
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-link {
+  color: var(--primary-title-subtitle-color);
+}
+
+.hero-uptext {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-banner-color-transparent);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: var(--primary-text-banner-color);
+}
+.hero-downtext {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-banner-color);
+}
+/* -------------------------------------------------------------------------ABOUT------------------------------------------------------------------------- */
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-img {
+}
+.about-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--primary-title-subtitle-color);
+}
+.about-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-title-subtitle-color);
+}
+.about-uptext {
+  font-style: normal;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+.down-uptext {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+}
+.about-btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  color: var(--primary-title-subtitle-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+/* -------------------------------------------------------------------------PRICES------------------------------------------------------------------------- */
+
+.prices {
+  background-color: gray;
+}
+.prices-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-banner-color-transparent);
+}
+.prices-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-text-banner-color);
+}
+.prices-list {
+}
+.list {
+}
+.prices-item {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-banner-color);
+}
+.prices-nomination {
+}
+.prices-price {
+}
+.prices-btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--accent-color);
+  color: var(--primary-text-banner-color);
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+/* -------------------------------------------------------------------------ADVANTAGES------------------------------------------------------------------------- */
+
+.advantages {
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-title-subtitle-color);
+}
+.advantages-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  color: var(--primary-title-subtitle-color);
+}
+.advantages-subtext {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--primary-title-subtitle-color);
+}
+.advantages-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-title-subtitle-color);
+}
+
+.advantages-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+/* -------------------------------------------------------------------------WORKING-STAFF------------------------------------------------------------------------- */
+
+.working-staff {
+  background: #f7f7f7;
+}
+
+.working-staff-subtext {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--primary-title-subtitle-color);
+}
+.working-staff-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+.working-staff-list {
+}
+.list {
+}
+.working-staff-item {
+}
+.working-staff-img {
+}
+.working-staff-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.02em;
+}
+.working-staff-position {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+/* -------------------------------------------------------------------------GALLERY------------------------------------------------------------------------- */
+
+.gallery {
+}
+.gallery-subtext {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.gallery-list {
+}
+.list {
+}
+.gallery-item {
+}
+.gallery-img {
+}
+
+/* -------------------------------------------------------------------------ENTRY&CONTACTS------------------------------------------------------------------------- */
+
+.entry {
+  background-color: gray;
+}
+.entry-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-text-banner-color);
+}
+.contacts {
+  background-color: gray;
+}
+.contacts-title {
+  font-family: "Raleway";
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-text-banner-color);
+}
+.contacts-adress {
+}
+.contacts-list {
+}
+.contacts-item {
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-banner-color);
+}
+
+a[href="maito:barbershop@email.com"] {
+  text-decoration-line: underline;
+}
+
+.contacts-working-time {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-banner-color);
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-banner-color);
+}
+
+/* -------------------------------------------------------------------------FOOTER------------------------------------------------------------------------- */
+
+.footer {
+}
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-text-banner-color);
+}
+.footer-list {
+}
+.footer-item {
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+}
