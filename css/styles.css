@@ -4,7 +4,7 @@
   --secondary-text-banner-color-transparent: rgba(157, 164, 189, 0.6);
   --secondary-text-banner-color: #9da4bd;
   --primary-text-color: #555555;
-
+  --advantages-block-color: #f7f7f7;
   --accent-color: #ff6c00;
 }
 
@@ -295,10 +295,18 @@ ul {
 /* -------------------------------------------------------------------------ADVANTAGES------------------------------------------------------------------------- */
 
 .advantages {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .advantages-list {
 }
 .advantages-item {
+  text-align: center;
+  padding: 20px 24px;
+  width: 170px;
+  height: 133px;
+  background-color: var(--advantages-block-color);
+  display: block;
 }
 .advantages-number {
   font-weight: 700;
@@ -316,6 +324,8 @@ ul {
   color: var(--primary-title-subtitle-color);
 }
 .advantages-subtext {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -326,6 +336,8 @@ ul {
   color: var(--primary-title-subtitle-color);
 }
 .advantages-title {
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: calc(49 / 42);
@@ -334,7 +346,9 @@ ul {
   color: var(--primary-title-subtitle-color);
 }
 
-.advantages-text {
+.advantages-downtext {
+  margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: calc(30 / 18);
@@ -347,9 +361,13 @@ ul {
 
 .working-staff {
   background: #f7f7f7;
+  padding-bottom: 130px;
+  padding-top: 130px;
 }
 
 .working-staff-subtext {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -359,6 +377,8 @@ ul {
   color: var(--primary-title-subtitle-color);
 }
 .working-staff-title {
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: calc(49 / 42);
@@ -371,14 +391,19 @@ ul {
 .working-staff-item {
 }
 .working-staff-img {
+  margin-bottom: 30px;
 }
 .working-staff-name {
+  margin-bottom: 8px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: calc(25 / 18);
   letter-spacing: 0.02em;
 }
 .working-staff-position {
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: calc(19 / 14);
   letter-spacing: 0.02em;
@@ -389,8 +414,12 @@ ul {
 /* -------------------------------------------------------------------------GALLERY------------------------------------------------------------------------- */
 
 .gallery {
+  padding-bottom: 130px;
+  padding-top: 130px;
 }
 .gallery-subtext {
+  margin-bottom: 44px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -423,6 +452,7 @@ ul {
 /* -------------------------------------------------------------------------ENTRY&CONTACTS------------------------------------------------------------------------- */
 
 .entry {
+  padding-top: 130px;
   background-color: gray;
 }
 .entry-title {
@@ -434,6 +464,8 @@ ul {
   color: var(--primary-text-banner-color);
 }
 .contacts {
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-color: gray;
 }
 .contacts-title {
@@ -491,7 +523,10 @@ a[href="maito:barbershop@email.com"] {
 /* -------------------------------------------------------------------------FOOTER------------------------------------------------------------------------- */
 
 .footer {
+  padding-top: 57px;
+  padding-bottom: 55px;
 }
+
 .footer-text {
   font-weight: 600;
   font-size: 11px;
