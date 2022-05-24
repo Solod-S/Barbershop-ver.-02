@@ -18,6 +18,20 @@ h3,
 h4,
 h5 {
   color: var(--primary-title-subtitle-color);
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+p,
+img {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
 }
 
 .list {
@@ -26,6 +40,15 @@ h5 {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px dashed orange;
 }
 
 /* -------------------------------------------------------------------------HEADER------------------------------------------------------------------------- */
@@ -41,6 +64,8 @@ h5 {
 
 .header {
   background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-logo {
 }
@@ -67,7 +92,6 @@ h5 {
   color: var(--primary-text-banner-color);
 }
 .header-btn {
-  cursor: pointer;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -84,7 +108,6 @@ h5 {
 /* -------------------------------------------------------------------------HERO------------------------------------------------------------------------- */
 
 .hero {
-  background-color: grey;
 }
 .hero-list {
 }
@@ -100,7 +123,16 @@ h5 {
   color: var(--primary-title-subtitle-color);
 }
 
+.hero-thmb {
+  background-color: grey;
+  padding-top: 272px;
+  padding-left: 96px;
+  padding-bottom: 206px;
+  padding-left: 96px;
+}
+
 .hero-uptext {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -110,6 +142,8 @@ h5 {
   color: var(--secondary-text-banner-color-transparent);
 }
 .hero-title {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
@@ -128,6 +162,8 @@ h5 {
 /* -------------------------------------------------------------------------ABOUT------------------------------------------------------------------------- */
 
 .about {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .about-list {
 }
@@ -135,7 +171,13 @@ h5 {
 }
 .about-img {
 }
+
+.about-thmb {
+}
+
 .about-subtitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -145,6 +187,8 @@ h5 {
   color: var(--primary-title-subtitle-color);
 }
 .about-title {
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -154,18 +198,21 @@ h5 {
   color: var(--primary-title-subtitle-color);
 }
 .about-uptext {
+  margin-bottom: 20px;
+
   font-style: normal;
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
 }
 .down-uptext {
+  margin-bottom: 20px;
+
   font-size: 14px;
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
 }
 .about-btn {
-  cursor: pointer;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -182,9 +229,18 @@ h5 {
 /* -------------------------------------------------------------------------PRICES------------------------------------------------------------------------- */
 
 .prices {
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-color: gray;
 }
+.prices-thmb {
+  padding: 32px;
+  margin-bottom: 50px;
+}
+
 .prices-text {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -193,7 +249,10 @@ h5 {
 
   color: var(--secondary-text-banner-color-transparent);
 }
+
 .prices-title {
+  margin-bottom: 44px;
+
   font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: calc(49 / 42);
@@ -217,7 +276,9 @@ h5 {
 .prices-price {
 }
 .prices-btn {
-  cursor: pointer;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
