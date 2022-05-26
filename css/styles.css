@@ -23,6 +23,11 @@ h5 {
 
 button {
   cursor: pointer;
+  min-width: 160px;
+  height: 40px;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
 }
 
 p,
@@ -52,6 +57,10 @@ ul {
 }
 
 /* -------------------------------------------------------------------------HEADER------------------------------------------------------------------------- */
+header .container {
+  display: flex;
+  align-items: center;
+}
 
 .header-link:hover,
 .header-link:focus,
@@ -68,14 +77,29 @@ ul {
   padding-bottom: 32px;
 }
 .header-logo {
+  margin-right: 70px;
 }
-.header-nav {
+
+.header-list {
+  display: flex;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
 }
+.header-tel {
+  margin-right: 40px;
+}
+
+.header-thmb {
+  margin-left: auto;
+}
 .header-list {
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
 }
 .header-item {
 }
@@ -106,12 +130,24 @@ ul {
 }
 
 /* -------------------------------------------------------------------------HERO------------------------------------------------------------------------- */
+.hero .container {
+  display: flex;
+}
+.hero-list-thmb {
+  width: 90px;
+}
 
 .hero {
 }
 .hero-list {
 }
 .hero-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--primary-title-subtitle-color);
 }
 
 .hero-link:hover,
@@ -124,6 +160,7 @@ ul {
 }
 
 .hero-thmb {
+  flex-grow: 1;
   background-color: grey;
   padding-top: 272px;
   padding-left: 96px;
@@ -161,11 +198,19 @@ ul {
 }
 /* -------------------------------------------------------------------------ABOUT------------------------------------------------------------------------- */
 
+.about .container {
+  display: flex;
+}
+
 .about {
   padding-top: 130px;
   padding-bottom: 130px;
 }
 .about-list {
+  display: flex;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 .about-item {
 }
@@ -173,6 +218,7 @@ ul {
 }
 
 .about-thmb {
+  margin-left: 64px;
 }
 
 .about-subtitle {
@@ -227,6 +273,9 @@ ul {
 }
 
 /* -------------------------------------------------------------------------PRICES------------------------------------------------------------------------- */
+.prices-thmb {
+  display: flex;
+}
 
 .prices {
   padding-top: 130px;
@@ -234,7 +283,6 @@ ul {
   background-color: gray;
 }
 .prices-thmb {
-  padding: 32px;
   margin-bottom: 50px;
 }
 
@@ -261,10 +309,15 @@ ul {
   color: var(--primary-text-banner-color);
 }
 .prices-list {
+  width: 540px;
+  height: 240px;
+  padding: 30px 40px;
 }
 .list {
 }
 .prices-item {
+  display: flex;
+  justify-content: space-between;
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
@@ -294,9 +347,28 @@ ul {
 
 /* -------------------------------------------------------------------------ADVANTAGES------------------------------------------------------------------------- */
 
+.advantages .container {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+  margin-right: 130px;
+}
+
 .advantages {
   padding-top: 130px;
   padding-bottom: 130px;
+}
+
+.advantages-list .advantages-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+.advantages-list .advantages-item:nth-child(2n) {
+  margin-top: 30px;
 }
 .advantages-list {
 }
@@ -316,6 +388,10 @@ ul {
 
   color: var(--primary-title-subtitle-color);
 }
+.advantages-thmb {
+  width: 500px;
+}
+
 .advantages-text {
   font-weight: 600;
   font-size: 11px;
@@ -385,10 +461,22 @@ ul {
   letter-spacing: 0.05em;
 }
 .working-staff-list {
+  display: flex;
+  flex-basis: calc(100% / 3 - 60px);
+  margin-right: -30px;
+  margin-top: -30px;
 }
-.list {
-}
+
 .working-staff-item {
+  margin-right: 30px;
+  margin-top: 30px;
+  height: 502px;
+}
+
+.working-staff-thmb {
+}
+
+.list {
 }
 .working-staff-img {
   margin-bottom: 30px;
@@ -441,9 +529,22 @@ ul {
 }
 
 .gallery-list {
+  display: flex;
+  flex-basis: calc(100% / 4 - 90px);
+  margin-right: -30px;
+  margin-top: -30px;
 }
+.gallery-item {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
 .list {
 }
+/* .gallery-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
 .gallery-item {
 }
 .gallery-img {
@@ -451,11 +552,17 @@ ul {
 
 /* -------------------------------------------------------------------------ENTRY&CONTACTS------------------------------------------------------------------------- */
 
+.entry-thmb {
+  display: flex;
+}
+
 .entry {
+  flex-grow: 1;
   padding-top: 130px;
   background-color: gray;
 }
 .entry-title {
+  margin-left: 50px;
   font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: calc(49 / 42);
@@ -463,11 +570,17 @@ ul {
 
   color: var(--primary-text-banner-color);
 }
+
 .contacts {
+  flex-grow: 1;
   padding-top: 130px;
   padding-bottom: 130px;
   background-color: gray;
 }
+.contacts-thmb {
+  padding-left: 101px;
+}
+
 .contacts-title {
   font-family: "Raleway";
   font-size: 42px;
@@ -521,7 +634,9 @@ a[href="maito:barbershop@email.com"] {
 }
 
 /* -------------------------------------------------------------------------FOOTER------------------------------------------------------------------------- */
-
+.footer .container {
+  display: flex;
+}
 .footer {
   padding-top: 57px;
   padding-bottom: 55px;
@@ -536,6 +651,11 @@ a[href="maito:barbershop@email.com"] {
   color: var(--secondary-text-banner-color);
 }
 .footer-list {
+  display: flex;
+  margin-left: auto;
+}
+.footer-list li:not(:last-child) {
+  margin-right: 40px;
 }
 .footer-item {
 }
@@ -550,4 +670,5 @@ a[href="maito:barbershop@email.com"] {
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
+  color: var(--primary-title-subtitle-color);
 }
