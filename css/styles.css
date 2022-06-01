@@ -72,7 +72,9 @@ header .container {
 }
 
 .header {
-  background-color: grey;
+  position: absolute;
+  left: 0;
+  right: 0;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -135,13 +137,24 @@ header .container {
 }
 .hero-list-thmb {
   width: 90px;
+  position: relative;
 }
 
 .hero {
 }
 .hero-list {
+  display: flex;
+  transform: rotate(-89.83deg);
+  position: absolute;
+  top: 69%;
+  left: -57%;
 }
 .hero-item {
+  display: block;
+
+  top: 50%;
+  left: 0;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -149,7 +162,9 @@ header .container {
 
   color: var(--primary-title-subtitle-color);
 }
-
+.hero-item:not(:last-child) {
+  margin-right: 40px;
+}
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
@@ -160,6 +175,8 @@ header .container {
 }
 
 .hero-thmb {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
   flex-grow: 1;
   background-color: grey;
   padding-top: 272px;
@@ -278,9 +295,13 @@ header .container {
 }
 
 .prices {
+  background-image: url(../images/prices-bg.svg);
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 130px;
-  background-color: gray;
+  background-color: #111319;
 }
 .prices-thmb {
   margin-bottom: 50px;
@@ -437,6 +458,8 @@ header .container {
 
 .working-staff {
   background: #f7f7f7;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-bottom: 130px;
   padding-top: 130px;
 }
@@ -483,7 +506,7 @@ header .container {
 }
 .working-staff-name {
   margin-bottom: 8px;
-
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(25 / 18);
@@ -491,7 +514,7 @@ header .container {
 }
 .working-staff-position {
   margin-bottom: 30px;
-
+  text-align: center;
   font-size: 14px;
   line-height: calc(19 / 14);
   letter-spacing: 0.02em;
