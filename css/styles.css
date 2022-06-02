@@ -81,16 +81,18 @@ header .container {
   align-items: center;
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-tel:hover,
-.header-tel:focus,
 .header-btn:hover,
 .header-btn:focus {
   color: var(--advantages-block-color);
   background-color: var(--accent-color);
 }
 
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
 .header {
   position: absolute;
   left: 0;
