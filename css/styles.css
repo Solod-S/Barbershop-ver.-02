@@ -720,6 +720,7 @@ header .container {
 }
 .entry-form-thmb {
   display: flex;
+  margin-bottom: 44px;
 }
 .entry-form-item {
 }
