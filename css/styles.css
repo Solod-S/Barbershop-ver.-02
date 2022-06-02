@@ -53,7 +53,7 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px dashed orange;
+  /* outline: 1px dashed orange; */
 }
 .before-gray::before {
   display: inline-block;
@@ -87,7 +87,8 @@ header .container {
 .header-tel:focus,
 .header-btn:hover,
 .header-btn:focus {
-  color: var(--accent-color);
+  color: var(--advantages-block-color);
+  background-color: var(--accent-color);
 }
 
 .header {
@@ -98,6 +99,7 @@ header .container {
   padding-bottom: 32px;
 }
 .header-logo {
+  z-index: 1;
   margin-right: 70px;
 }
 
@@ -310,6 +312,12 @@ header .container {
   border-radius: 25px;
 }
 
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--primary-text-banner-color);
+  background-color: var(--accent-color);
+}
+
 /* -------------------------------------------------------------------------PRICES------------------------------------------------------------------------- */
 .prices-thmb {
   display: flex;
@@ -318,7 +326,7 @@ header .container {
 .prices {
   background-image: url(../images/prices-bg.svg);
   background-size: cover;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 130px;
@@ -373,6 +381,9 @@ header .container {
 
   color: var(--secondary-text-banner-color);
 }
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 .prices-item::before {
   margin: 0 6px;
   content: "";
@@ -406,6 +417,11 @@ header .container {
   border-radius: 25px;
 }
 
+.prices-btn:hover,
+.prices-btn:focus {
+  color: var(--primary-text-banner-color);
+  background-color: var(--accent-color);
+}
 /* -------------------------------------------------------------------------ADVANTAGES------------------------------------------------------------------------- */
 
 .advantages .container {
@@ -510,7 +526,7 @@ header .container {
 
 .working-staff {
   background: #f7f7f7;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 130px;
   padding-top: 130px;
@@ -528,7 +544,7 @@ header .container {
   color: var(--primary-title-subtitle-color);
 }
 .working-staff-title {
-  margin-bottom: 20px;
+  margin-bottom: 44px;
 
   font-family: "Raleway", sans-serif;
   font-size: 42px;
@@ -570,6 +586,11 @@ header .container {
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-text-banner-color);
+}
+
+.woking-social-link:hover .working-social-svg,
+.woking-social-link:focus .working-social-svg {
+  fill: var(--accent-color);
 }
 .working-social-svg {
 }
@@ -651,14 +672,18 @@ header .container {
 
 .entry-thmb {
   display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .entry {
-  flex-grow: 1;
+  padding: 130px 40px 193px 57px;
+  width: calc(50% + 15px);
   padding-top: 130px;
-  background-color: gray;
+  background: #191c26;
 }
 .entry-title {
+  margin-bottom: 44px;
   margin-left: 50px;
   font-family: "Raleway", sans-serif;
   font-size: 42px;
@@ -667,19 +692,94 @@ header .container {
 
   color: var(--primary-text-banner-color);
 }
+.entry-form-item input {
+  width: 264px;
+  padding-bottom: 8px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.entry-form {
+}
+.entry-form-list {
+  margin-bottom: 44px;
+}
+.list {
+}
+.entry-form-thmb {
+  display: flex;
+}
+.entry-form-item {
+}
+.entry-form-item textarea {
+  width: 560px;
+  height: 76px;
+
+  resize: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+}
+.entry-form-item:first-child {
+  margin-right: 30px;
+}
+
+.entry-form-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  color: var(--primary-text-banner-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.entry-form-btn:hover,
+.entry-form-btn:focus,
+.entry-form-btn:hover,
+.entry-form-btn:focus,
+.entry-form-btn:hover,
+.entry-form-btn:focus {
+  color: var(--primary-text-banner-color);
+  background-color: var(--accent-color);
+}
 
 .contacts {
-  flex-grow: 1;
+  width: calc(50% - 15px);
   padding-top: 130px;
   padding-bottom: 130px;
-  background-color: gray;
+  background-image: url(../images/contact-bg.svg);
+  background-color: #191c26;
 }
 .contacts-thmb {
   padding-left: 101px;
 }
 
 .contacts-title {
-  font-family: "Raleway";
+  margin-bottom: 40px;
+  font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
@@ -689,15 +789,25 @@ header .container {
 .contacts-adress {
 }
 .contacts-list {
+  margin-bottom: 70px;
+}
+.contacts-list li:not(:last-child) {
+  margin-bottom: 20px;
 }
 .contacts-item {
 }
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
+.contacts-svg {
+  vertical-align: middle;
+  margin-right: 16px;
+  fill: transparent;
 }
-
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link:hover .contacts-svg,
+.contacts-link:focus .contacts-svg {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 .contacts-link {
   text-decoration: none;
   font-style: normal;
@@ -713,6 +823,7 @@ a[href="maito:barbershop@email.com"] {
 }
 
 .contacts-working-time {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
