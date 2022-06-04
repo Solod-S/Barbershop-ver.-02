@@ -25,7 +25,12 @@ h5 {
   margin: 0;
 }
 
-button {
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
   cursor: pointer;
   min-width: 160px;
   height: 40px;
@@ -122,6 +127,8 @@ header .container {
 }
 
 .header-thmb {
+  display: flex;
+  align-items: center;
   margin-left: auto;
   margin-right: 5px;
 }
@@ -303,14 +310,17 @@ header .container {
   letter-spacing: 0.02em;
 }
 .down-uptext {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   font-size: 14px;
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
 }
 .about-btn {
+  display: inline-block;
   font-family: inherit;
+  text-decoration: none;
+  padding: 12px 20px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -372,7 +382,7 @@ header .container {
   color: var(--primary-text-banner-color);
 }
 .prices-list {
-  width: 540px;
+  min-width: 585px;
   height: 240px;
   padding: 30px 40px;
 }
@@ -413,11 +423,14 @@ header .container {
 .prices-price {
   order: 3;
 }
+.prices-btn-wrapper {
+  display: flex;
+}
 .prices-btn {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   font-family: inherit;
+  padding: 12px 20px;
+  text-decoration: none;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -771,6 +784,9 @@ header .container {
   color: rgba(157, 164, 189, 0.4);
 }
 .entry-form-btn {
+  margin: 0 auto;
+  padding: 12px 38px;
+  text-decoration: none;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
