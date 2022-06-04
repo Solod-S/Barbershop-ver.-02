@@ -17,7 +17,7 @@
   <body>
 <!-- /* --------------------------------------------------------------------------HEADER------------------------------------------------------------------------- */ -->
 
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <a class="header-logo" href="./index.html"
           ><img src="./images/logo.svg" alt="логотип"
@@ -26,16 +26,16 @@
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="">О нас</a>
+              <a class="header-link link" href="#about-us">О нас</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="">Услуги и цены</a>
+              <a class="header-link link" href="#prices">Услуги и цены</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="">Мастера</a>
+              <a class="header-link link" href="#working-staff">Мастера</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="">Контакты</a>
+              <a class="header-link link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -89,7 +89,7 @@
 
 <!-- /* -------------------------------------------------------------------------ABOUT------------------------------------------------------------------------- */ -->
 
-      <section class="about">
+      <section class="about" id="about-us">
         <div class="container">
           <ul class="about-list list">
             <li class="about-item">
@@ -132,7 +132,7 @@
 
       <!-- /* -------------------------------------------------------------------------PRICES------------------------------------------------------------------------- */ -->
 
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="container">
           <p class="prices-text before-gray">Проведи время в компании лучших мастеров</p>
           <h2 class="prices-title">Услуги и цены</h2>
@@ -214,7 +214,7 @@
       </section>
 
 <!-- /* -------------------------------------------------------------------------WORKING-STAFF------------------------------------------------------------------------- */ -->
-      <section class="working-staff">
+      <section class="working-staff" id="working-staff">
         <div class="container">
           <p class="working-staff-subtext before-black">для настоящих ценителей атмосферы</p>
           <h2 class="working-staff-title">Наши мастера</h2>
@@ -427,7 +427,7 @@
         </div>
       </section>
 <!-- /* -------------------------------------------------------------------------ENTRY&CONTACTS------------------------------------------------------------------------- */ -->
-      <div class=" entry-thmb">
+      <div class=" entry-thmb" id="contacts">
       <section class="entry">
         <h2 class="entry-title">Онлайн-запись</h2>
         <form class="entry-form">
@@ -489,6 +489,13 @@
 <!-- /* -------------------------------------------------------------------------FOOTER------------------------------------------------------------------------- */ -->    
 
 <footer>
+  <div class="chevron">
+    <a class="chevron-up" href="#header">
+                      <svg class="chevron-svg" width="32px" height="32px" >
+                        <use href="./images/symbol-defs.svg#icon-chevron-up"></use>
+                      </svg>
+    </a>
+  </div>
       <section class="footer">
           <div class="container">
               <p class="footer-text">&#169; Copyright 2022</p>

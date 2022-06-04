@@ -119,6 +119,7 @@ header .container {
 
 .header-thmb {
   margin-left: auto;
+  margin-right: 5px;
 }
 .header-list {
 }
@@ -131,6 +132,7 @@ header .container {
 
 .header-link {
   color: var(--primary-text-banner-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel {
   font-weight: 600;
@@ -139,6 +141,7 @@ header .container {
   letter-spacing: 0.1em;
 
   color: var(--primary-text-banner-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-btn {
   font-family: inherit;
@@ -152,6 +155,7 @@ header .container {
   color: var(--primary-text-banner-color);
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------------------------------------------------------------HERO------------------------------------------------------------------------- */
@@ -196,6 +200,7 @@ header .container {
 
 .hero-link {
   color: var(--primary-title-subtitle-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-thmb {
@@ -312,6 +317,8 @@ header .container {
   color: var(--primary-title-subtitle-color);
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-btn:hover,
@@ -417,6 +424,7 @@ header .container {
   color: var(--primary-text-banner-color);
   background-color: transparent;
   border-radius: 25px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prices-btn:hover,
@@ -595,6 +603,7 @@ header .container {
   fill: var(--accent-color);
 }
 .working-social-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list {
 }
@@ -769,6 +778,7 @@ header .container {
   color: var(--primary-text-banner-color);
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .entry-form-btn:hover,
@@ -777,7 +787,6 @@ header .container {
 .entry-form-btn:focus,
 .entry-form-btn:hover,
 .entry-form-btn:focus {
-  color: var(--primary-text-banner-color);
   background-color: var(--accent-color);
 }
 
@@ -815,13 +824,15 @@ header .container {
   vertical-align: middle;
   margin-right: 16px;
   fill: transparent;
+  stroke: #9da4bd;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus,
 .contacts-link:hover .contacts-svg,
 .contacts-link:focus .contacts-svg {
   color: var(--accent-color);
-  fill: var(--accent-color);
+  stroke: var(--accent-color);
 }
 .contacts-link {
   text-decoration: none;
@@ -831,6 +842,7 @@ header .container {
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-banner-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a[href="maito:barbershop@email.com"] {
@@ -894,4 +906,25 @@ a[href="maito:barbershop@email.com"] {
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: var(--primary-title-subtitle-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.chevron {
+}
+.chevron-up {
+  display: flex;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-title-subtitle-color);
+}
+.chevron-svg {
+  margin: auto;
+  fill: var(--primary-text-banner-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chevron-up:hover .chevron-svg {
+  fill: var(--accent-color);
 }
