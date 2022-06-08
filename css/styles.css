@@ -104,8 +104,7 @@ header .container {
 }
 .header {
   position: absolute;
-  left: 0;
-  right: 0;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
