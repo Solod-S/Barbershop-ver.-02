@@ -247,7 +247,7 @@ header .container {
 }
 /* -------------------------------------------------------------------------ABOUT------------------------------------------------------------------------- */
 
-.about .container {
+.about__wrapper {
   display: flex;
 }
 
@@ -311,8 +311,9 @@ header .container {
 }
 
 /* -------------------------------------------------------------------------PRICES------------------------------------------------------------------------- */
-.prices-thmb {
+.prices__wrapper {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .prices {
@@ -324,11 +325,8 @@ header .container {
   padding-bottom: 130px;
   background-color: #111319;
 }
-.prices-thmb {
-  margin-bottom: 50px;
-}
 
-.prices-text {
+.prices__text {
   margin-bottom: 20px;
 
   font-weight: 600;
@@ -340,7 +338,7 @@ header .container {
   color: var(--secondary-text-banner-color-transparent);
 }
 
-.prices-title {
+.prices__title {
   margin-bottom: 44px;
 
   font-family: "Raleway", sans-serif;
@@ -350,20 +348,20 @@ header .container {
 
   color: var(--primary-text-banner-color);
 }
-.prices-list {
+.services-list {
   min-width: 585px;
   height: 240px;
   padding: 30px 40px;
 }
-.left {
+.services-list--left {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-.right {
+.services-list--right {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 .list {
 }
-.prices-item {
+.services-list__item {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -373,10 +371,10 @@ header .container {
 
   color: var(--secondary-text-banner-color);
 }
-.prices-item:not(:last-child) {
+.services-list__item:not(:last-child) {
   margin-bottom: 20px;
 }
-.prices-item::before {
+.services-list__item::before {
   margin: 0 6px;
   content: "";
   order: 2;
@@ -386,31 +384,19 @@ header .container {
 
   background: rgba(157, 164, 189, 0.12);
 }
-.prices-nomination {
+.services-list__service {
   order: 1;
 }
-.prices-price {
+.services-list__price {
   order: 3;
 }
-.prices-btn-wrapper {
+.prices__btn-wrapper {
   display: flex;
 }
 .prices-btn {
   margin: 0 auto;
-  font-family: inherit;
-  padding: 12px 20px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
 
-  border: 1px solid var(--accent-color);
   color: var(--primary-text-banner-color);
-  background-color: transparent;
-  border-radius: 25px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prices-btn:hover,
