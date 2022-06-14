@@ -749,6 +749,7 @@ header .container {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 
   color: var(--primary-text-banner-color);
   border: 1px solid var(--accent-color);
