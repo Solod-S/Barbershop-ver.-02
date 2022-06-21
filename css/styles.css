@@ -406,12 +406,12 @@ header .container {
 }
 /* -------------------------------------------------------------------------ADVANTAGES------------------------------------------------------------------------- */
 
-.advantages .container {
+.advantages__wrapper {
   display: flex;
   justify-content: center;
 }
 
-.advantages-list {
+.advantages__list {
   display: flex;
   width: 370px;
   flex-wrap: wrap;
@@ -423,15 +423,14 @@ header .container {
   padding-bottom: 130px;
 }
 
-.advantages-list .advantages-item:nth-child(2n + 1) {
+.advantages__item:nth-child(2n + 1) {
   margin-right: 30px;
 }
-.advantages-list .advantages-item:nth-child(2n) {
+.advantages__item:nth-child(2n) {
   margin-top: 30px;
 }
-.advantages-list {
-}
-.advantages-item {
+
+.advantages__item {
   text-align: center;
   padding: 20px 24px;
   width: 170px;
@@ -439,7 +438,7 @@ header .container {
   background-color: var(--advantages-block-color);
   display: block;
 }
-.advantages-number {
+.advantages__number {
   position: relative;
   font-weight: 700;
   font-size: 42px;
@@ -449,7 +448,7 @@ header .container {
   color: var(--primary-title-subtitle-color);
 }
 
-.advantages-number::after {
+.advantages__number::after {
   position: absolute;
 
   content: "+";
@@ -459,18 +458,18 @@ header .container {
 
   color: #ff6c00;
 }
-.advantages-thmb {
-  width: 500px;
-}
 
-.advantages-text {
+.advantages__text {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
 
   color: var(--primary-title-subtitle-color);
 }
-.advantages-subtext {
+.advantages-story {
+  max-width: 500px;
+}
+.advantages-story__subtext {
   margin-bottom: 20px;
 
   font-weight: 600;
@@ -482,7 +481,7 @@ header .container {
 
   color: var(--primary-title-subtitle-color);
 }
-.advantages-title {
+.advantages-story__title {
   margin-bottom: 20px;
 
   font-family: "Raleway", sans-serif;
@@ -493,7 +492,7 @@ header .container {
   color: var(--primary-title-subtitle-color);
 }
 
-.advantages-downtext {
+.advantages-story__downtext {
   margin-bottom: 20px;
 
   font-weight: 400;
