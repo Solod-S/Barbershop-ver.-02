@@ -1,0 +1,127 @@
+// // -----------------------------margins/puddings---------------------------------
+// @mixin marginRightNotLastCh($selector: 30px) {
+//   &:not(:last-child) {
+//     margin-right: #{$selector};
+//   }
+// }
+// @mixin marginBottomNotLastCh($selector: 9px) {
+//   &:not(:last-child) {
+//     margin-bottom: #{$selector};
+//   }
+// }
+// // -----------------------------hover/focus/active---------------------------------
+// @mixin hoverOutline($color: $primaryAccentColor) {
+//   &:hover {
+//     outline: 1px solid #{$color};
+//   }
+// }
+// @mixin focusOutline($color: $primaryAccentColor) {
+//   &:focus {
+//     outline: 1px solid #{$color};
+//   }
+// }
+
+// @mixin hoverLink($color: $primaryAccentColor, $fill: $primaryAccentColor) {
+//   &:hover {
+//     color: #{$color};
+//     fill: #{$fill};
+//   }
+// }
+// @mixin focusLink($color: $primaryAccentColor, $fill: $primaryAccentColor) {
+//   &:focus {
+//     color: #{$color};
+//     fill: #{$fill};
+//   }
+// }
+// @mixin hoverBtn($color: $primaryAccentColor, $bgc: $primaryWhiteColor) {
+//   &:hover {
+//     color: #{$color};
+//     background-color: #{$bgc};
+//     fill: $primaryAccentColor;
+//   }
+// }
+// @mixin focusBtn($color: $primaryAccentColor, $bgc: $primaryWhiteColor) {
+//   &:focus {
+//     color: #{$color};
+//     background-color: #{$bgc};
+//     fill: $primaryAccentColor;
+//   }
+// }
+// @mixin hoverForm($fill: $primaryAccentColor, $outline: $primaryAccentColor) {
+//   &:hover {
+//     fill: #{$fill};
+//     outline: 1px solid #{$outline};
+//   }
+// }
+// @mixin focusForm($fill: $primaryAccentColor, $outline: $primaryAccentColor) {
+//   &:focus {
+//     fill: #{$fill};
+//     outline: 1px solid #{$outline};
+//   }
+// }
+// @mixin hovershadow($plug: none) {
+//   &:hover {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     min-width: #{$plug};
+//   }
+// }
+// @mixin focusshadow($plug: none) {
+//   &:focus {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     min-width: #{$plug};
+//   }
+// }
+// @mixin hoverSocial($fill: $primaryWhiteColor, $bgc: $primaryAccentColor) {
+//   &:hover {
+//     fill: #{$fill};
+//     background-color: #{$bgc};
+//   }
+// }
+// @mixin focusSocial($fill: $primaryWhiteColor, $bgc: $primaryAccentColor) {
+//   &:focus {
+//     fill: #{$fill};
+//     background-color: #{$bgc};
+//   }
+// }
+
+// @mixin hoverButtons-set($color: $primaryWhiteColor, $bgc: $primaryAccentColor) {
+//   &:hover {
+//     background-color: #{$bgc};
+//     color: #{$color};
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+//   }
+// }
+
+// @mixin focusButtons-set($color: $primaryWhiteColor, $bgc: $primaryAccentColor) {
+//   &:focus {
+//     background-color: #{$bgc};
+//     color: #{$color};
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+//   }
+// }
+// @mixin activeButtons-set($color: $primaryWhiteColor, $bgc: $primaryAccentColor) {
+//   &:focus {
+//     background-color: #{$bgc};
+//     color: #{$color};
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+//   }
+// }
+// @mixin hoverCar-setShadow($plug: none) {
+//   &:hover {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//     min-width: #{$plug};
+//   }
+// }
+// @mixin focusCar-setShadow($plug: none) {
+//   &:focus {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//     min-width: #{$plug};
+//   }
+// }

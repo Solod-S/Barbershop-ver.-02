@@ -1,0 +1,91 @@
+.prices__wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.prices {
+  background-image: url(../images/prices-bg.svg);
+  background-size: cover;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #111319;
+}
+
+.prices__text {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-banner-color-transparent);
+}
+
+.prices__title {
+  margin-bottom: 44px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-text-banner-color);
+}
+.services-list {
+  min-width: 585px;
+  height: 240px;
+  padding: 30px 40px;
+}
+.services-list--left {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.services-list--right {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.services-list__item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-banner-color);
+}
+.services-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.services-list__item::before {
+  margin: 0 6px;
+  content: "";
+  order: 2;
+  height: 1px;
+  flex-grow: 1;
+  background-color: var(--secondary-text-banner-color);
+
+  background: rgba(157, 164, 189, 0.12);
+}
+.services-list__service {
+  order: 1;
+}
+.services-list__price {
+  order: 3;
+}
+.prices__btn-wrapper {
+  display: flex;
+}
+.prices-btn {
+  margin: 0 auto;
+
+  color: var(--primary-text-banner-color);
+}
+
+.prices-btn:hover,
+.prices-btn:focus {
+  color: var(--primary-text-banner-color);
+  background-color: var(--accent-color);
+}
