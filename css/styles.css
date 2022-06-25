@@ -7,7 +7,18 @@
   --advantages-block-color: #f7f7f7;
   --accent-color: #ff6c00;
 }
-
+.visually__hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -598,7 +609,7 @@ header .container {
   padding-bottom: 130px;
   padding-top: 130px;
 }
-.gallery-subtext {
+.gallery__subtext {
   margin-bottom: 44px;
 
   font-weight: 600;
@@ -608,40 +619,20 @@ header .container {
   text-transform: uppercase;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.gallery-list {
+.gallery__list {
   display: flex;
   flex-basis: calc(100% / 4 - 90px);
   margin-right: -30px;
   margin-top: -30px;
 }
-.gallery-item {
+.gallery__item {
   margin-right: 30px;
   margin-top: 30px;
 }
 
-.list {
-}
-/* .gallery-item:not(:last-child) {
+/* .gallery__item:not(:last-child) {
   margin-right: 30px;
 } */
-
-.gallery-item {
-}
-.gallery-img {
-}
 
 /* -------------------------------------------------------------------------ENTRY&CONTACTS------------------------------------------------------------------------- */
 
