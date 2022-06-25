@@ -636,7 +636,7 @@ header .container {
 
 /* -------------------------------------------------------------------------ENTRY&CONTACTS------------------------------------------------------------------------- */
 
-.entry-thmb {
+.entry__wrapper {
   display: flex;
   max-width: 1280px;
   margin: 0 auto;
@@ -648,7 +648,7 @@ header .container {
   padding-top: 130px;
   background: #191c26;
 }
-.entry-title {
+.entry__title {
   margin-bottom: 44px;
   margin-left: 50px;
   font-family: "Raleway", sans-serif;
@@ -658,8 +658,9 @@ header .container {
 
   color: var(--primary-text-banner-color);
 }
-.entry-form-item input {
+.entry-form__input {
   width: 264px;
+  height: 24px;
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -672,23 +673,15 @@ header .container {
 
   color: rgba(157, 164, 189, 0.4);
 }
-.entry-form-item input {
-  height: 24px;
-}
-.entry-form {
-}
-.entry-form-list {
+
+.entry-form__list {
   margin-bottom: 44px;
 }
-.list {
-}
-.entry-form-thmb {
+.entry-form__thmb {
   display: flex;
   margin-bottom: 44px;
 }
-.entry-form-item {
-}
-.entry-form-item textarea {
+.entry-form__textarea {
   width: 560px;
   height: 76px;
 
@@ -706,10 +699,10 @@ header .container {
 
   color: rgba(157, 164, 189, 0.4);
 }
-.entry-form-item:first-child {
+.entry-form__item:first-child {
   margin-right: 30px;
 }
-.entry-form-input::placeholder {
+.entry-form__input::placeholder {
   display: flex;
   align-items: flex-start;
   font-weight: 600;
@@ -721,7 +714,7 @@ header .container {
 
   color: rgba(157, 164, 189, 0.4);
 }
-.entry-form-btn {
+.entry-form__btn {
   margin: 0 auto;
   padding: 12px 38px;
   text-decoration: none;
@@ -740,12 +733,12 @@ header .container {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.entry-form-btn:hover,
-.entry-form-btn:focus,
-.entry-form-btn:hover,
-.entry-form-btn:focus,
-.entry-form-btn:hover,
-.entry-form-btn:focus {
+.entry-form__btn:hover,
+.entry-form__btn:focus,
+.entry-form__btn:hover,
+.entry-form__btn:focus,
+.entry-form__btn:hover,
+.entry-form__btn:focus {
   background-color: var(--accent-color);
 }
 
@@ -756,11 +749,11 @@ header .container {
   background-image: url(../images/contact-bg.svg);
   background-color: #191c26;
 }
-.contacts-thmb {
+.contacts__thmb {
   padding-left: 101px;
 }
 
-.contacts-title {
+.contacts__title {
   margin-bottom: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 42px;
@@ -769,31 +762,28 @@ header .container {
 
   color: var(--primary-text-banner-color);
 }
-.contacts-adress {
-}
-.contacts-list {
+
+.contacts__list {
   margin-bottom: 70px;
 }
 .contacts-list li:not(:last-child) {
   margin-bottom: 20px;
 }
-.contacts-item {
-}
-.contacts-svg {
+.contacts__svg {
   vertical-align: middle;
   margin-right: 16px;
   fill: transparent;
   stroke: #9da4bd;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-link:hover,
-.contacts-link:focus,
-.contacts-link:hover .contacts-svg,
-.contacts-link:focus .contacts-svg {
+.contacts__link:hover,
+.contacts__link:focus,
+.contacts__link:hover .contacts__svg,
+.contacts__link:focus .contacts__svg {
   color: var(--accent-color);
   stroke: var(--accent-color);
 }
-.contacts-link {
+.contacts__link {
   text-decoration: none;
   font-style: normal;
   font-size: 18px;
@@ -804,11 +794,11 @@ header .container {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a[href="maito:barbershop@email.com"] {
+.contacts__link--underline {
   text-decoration-line: underline;
 }
 
-.contacts-working-time {
+.contacts__working-time {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -819,7 +809,7 @@ a[href="maito:barbershop@email.com"] {
   color: var(--primary-text-banner-color);
 }
 
-.contacts-time {
+.contacts__time {
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
