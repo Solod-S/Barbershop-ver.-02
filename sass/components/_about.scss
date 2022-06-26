@@ -1,66 +1,72 @@
-.about__wrapper {
-  display: flex;
-}
-
 .about {
   padding-top: 130px;
   padding-bottom: 130px;
-}
-.about__img-list {
-  display: flex;
-}
-.about__img-item:not(:last-child) {
-  margin-right: 30px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__img-list {
+    display: flex;
+  }
+
+  &__img-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-us {
   margin-left: 64px;
-}
 
-.about-us__uptext {
-  margin-bottom: 20px;
+  &__uptext {
+    margin-bottom: 20px;
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 
-  color: var(--primary-title-subtitle-color);
-}
-.about-us__title {
-  margin-bottom: 20px;
+    color: var(--primary-title-subtitle-color);
+  }
 
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
+  &__title {
+    margin-bottom: 20px;
 
-  color: var(--primary-title-subtitle-color);
-}
-.about-us__subtitle {
-  margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
 
-  font-style: normal;
-  font-size: 18px;
-  line-height: calc(30 / 18);
-  letter-spacing: 0.02em;
-}
-.about-us__text {
-  margin-bottom: 40px;
+    color: var(--primary-title-subtitle-color);
+  }
 
-  font-size: 14px;
-  line-height: calc(26 / 14);
-  letter-spacing: 0.02em;
-}
-.about-us__btn {
-  color: var(--primary-title-subtitle-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.about-us__btn:hover,
-.about-us__btn:focus {
-  color: var(--primary-text-banner-color);
-  background-color: var(--accent-color);
+  &__subtitle {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    letter-spacing: 0.02em;
+  }
+
+  &__btn {
+    color: var(--primary-title-subtitle-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--primary-text-banner-color);
+      background-color: var(--accent-color);
+    }
+  }
 }
