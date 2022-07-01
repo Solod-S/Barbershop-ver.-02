@@ -1,15 +1,34 @@
 .prices {
   background-image: url(../images/prices-bg.svg);
   background-size: cover;
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: #111319;
 
+  @media screen and (min-width: $breakpointBeeforeDesktop) {
+    background-image: url(../images/prices-bg.svg);
+    background-size: cover;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: #111319;
+  }
+
   &__wrapper {
-    display: flex;
     margin-bottom: 50px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      background: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
+    @media screen and (min-width: $breakpointBeeforeTablet) {
+      display: flex;
+    }
   }
 
   &__text {
@@ -53,25 +72,44 @@
 }
 
 .services-list {
-  min-width: 585px;
-  height: 240px;
-  padding: 30px 40px;
+  @media screen and (min-width: $breakpointBeeforeDesktop) {
+    min-width: 585px;
+    height: 240px;
+    padding: 30px 40px;
+  }
 
   &--left {
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    @media screen and (min-width: $breakpointBeeforeDesktop) {
+      background: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
   }
   &--right {
-    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    @media screen and (min-width: $breakpointBeeforeDesktop) {
+      background: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      );
+    }
   }
+
   &__item {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    font-size: 18px;
-    line-height: calc(30 / 18);
+    font-size: 14px;
+    line-height: calc(30 / 14);
     letter-spacing: 0.02em;
 
     color: var(--secondary-text-banner-color);
+    @media screen and (min-width: $breakpointBeeforeDesktop) {
+      font-size: 18px;
+      line-height: calc(30 / 18);
+    }
 
     &:not(:last-child) {
       margin-bottom: 20px;
