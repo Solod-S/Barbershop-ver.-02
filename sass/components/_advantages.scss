@@ -1,13 +1,27 @@
 .advantages {
-  padding-top: 130px;
-  padding-bottom: 130px;
-
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
   &__wrapper {
-    display: flex;
-    justify-content: center;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__list {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     display: flex;
     width: 370px;
     flex-wrap: wrap;
@@ -15,9 +29,12 @@
   }
 
   &__item {
+    @media screen and (max-width: $breakpointBeeforeTell) {
+      max-width: 155px;
+    }
     text-align: center;
     padding: 20px 24px;
-    width: 170px;
+    max-width: 170px;
     height: 133px;
     background-color: var(--advantages-block-color);
     display: block;
@@ -62,6 +79,9 @@
 
 .advantages-story {
   max-width: 500px;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    margin-bottom: 84x;
+  }
 
   &__subtext {
     margin-bottom: 20px;
