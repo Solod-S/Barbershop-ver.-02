@@ -1,12 +1,19 @@
 .about {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: $breakpointBeeforeDesktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 
   &__wrapper {
     display: flex;
   }
 
   &__img-list {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: none;
+    }
     display: flex;
   }
 
@@ -16,8 +23,11 @@
 }
 
 .about-us {
-  margin-left: 64px;
-
+  margin-left: 15px;
+  margin-right: 15px;
+  @media screen and (min-width: $breakpointBeeforeDesktop) {
+    margin-left: 64px;
+  }
   &__uptext {
     margin-bottom: 20px;
 
@@ -35,11 +45,15 @@
 
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 42px;
-    line-height: calc(49 / 42);
+    font-size: 28px;
+    line-height: calc(33 / 28);
     letter-spacing: 0.05em;
 
     color: var(--primary-title-subtitle-color);
+    @media screen and (min-width: $breakpointBeeforeDesktop) {
+      font-size: 42px;
+      line-height: calc(49 / 42);
+    }
   }
 
   &__subtitle {

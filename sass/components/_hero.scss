@@ -1,9 +1,33 @@
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 112px;
+  @media screen and (min-width: $breakpointBeeforeTablet) {
+    display: none;
+  }
+  // .mobile-menu__logo {
+  // }
+  &__btn {
+    background-color: transparent;
+    border: none;
+  }
+  // .mobile-menu__svg {
+  // }
+  // .mobile-menu__icon-open {
+  // }
+  // .mobile-menu__icon-close {
+  // }
+}
+
 .hero {
   &__main-wrapper {
     display: flex;
   }
 
   &__social-wrapper {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: none;
+    }
     width: 90px;
     position: relative;
   }
@@ -47,15 +71,35 @@
 }
 
 .our-story {
-  background-image: url(../images/hero-bg.jpg);
-  background-size: cover;
-  flex-grow: 1;
-  height: 685px;
-  background-color: grey;
-  padding-top: 272px;
-  padding-right: 96px;
-  padding-bottom: 206px;
-  padding-left: 96px;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    background-image: url(../images/hero-bg-tel.jpg);
+    background-size: cover;
+    flex-grow: 1;
+    height: 685px;
+    background-color: grey;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 180px;
+    padding-left: 30px;
+    max-width: 100%;
+  }
+  &__wrapper {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      max-width: 310px;
+    }
+  }
+
+  @media screen and (min-width: $breakpointBeeforeTablet) {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    flex-grow: 1;
+    height: 685px;
+    background-color: grey;
+    padding-top: 272px;
+    padding-right: 96px;
+    padding-bottom: 206px;
+    padding-left: 96px;
+  }
 
   &__uptext {
     margin-bottom: 20px;
@@ -72,19 +116,29 @@
     margin-bottom: 20px;
 
     font-weight: 700;
-    font-size: 72px;
+    font-size: 38px;
     line-height: 1.18;
     letter-spacing: 0.05em;
 
     color: var(--primary-text-banner-color);
+    @media screen and (min-width: $breakpointTell) {
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: $breakpointBeeforeTablet) {
+      font-size: 72px;
+    }
   }
 
   &__downtext {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.66;
     letter-spacing: 0.02em;
 
     color: var(--secondary-text-banner-color);
+    @media screen and (min-width: $breakpointBeeforeTablet) {
+      font-size: 18px;
+    }
   }
 }

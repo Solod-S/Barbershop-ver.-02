@@ -37,8 +37,10 @@ h5 {
 }
 
 p,
-img {
-  margin: 0;
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 ul {
   margin: 0;
@@ -51,12 +53,20 @@ a {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px dashed orange; */
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $breakpointTell) {
+    width: $breakpointTell;
+  }
+  @media screen and (min-width: $breakpointTablet) {
+    width: $breakpointTablet;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
+    width: $breakpointDesktop;
+  }
 }
 .--gray-strip::before {
   display: inline-block;
