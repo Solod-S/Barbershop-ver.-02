@@ -39,7 +39,10 @@
   }
 
   &__img {
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

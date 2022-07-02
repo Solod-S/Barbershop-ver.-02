@@ -1,12 +1,24 @@
 .contacts {
-  width: calc(50% - 15px);
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-image: url(../images/contact-bg.svg);
   background-color: #191c26;
 
+  @media screen and (min-width: $breakpointDesktop) {
+    width: calc(50% - 15px);
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
   &__thmb {
-    padding-left: 101px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      padding-left: 31px;
+      padding-right: 31px;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      padding-left: 101px;
+    }
   }
 
   &__title {
@@ -19,8 +31,14 @@
     color: var(--primary-text-banner-color);
   }
 
-  &__list {
-    margin-bottom: 70px;
+  &__adress {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 44px;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-bottom: 70px;
+    }
   }
 
   &__item:not(:last-child) {
