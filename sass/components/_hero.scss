@@ -82,7 +82,7 @@
 
 .our-story {
   @media screen and (max-width: $breakpointBeeforeTablet) {
-    background-image: url(../images/hero-bg-tel.jpg);
+    background-image: url(../images/hero-bg-mob.jpg);
     background-size: cover;
 
     background-color: grey;
@@ -91,9 +91,15 @@
     padding-bottom: 180px;
     padding-left: 31px;
     width: 100%;
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg-mob@2x.jpg);
+    }
+    @media screen and (min-resolution: 3dppx) {
+      background-image: url(../images/hero-bg-mob@3x.jpg);
+    }
   }
   @media screen and (min-width: $breakpointTablet) {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../images/hero-bg-tablet.jpg);
     background-size: cover;
     flex-grow: 1;
     height: 685px;
@@ -102,6 +108,13 @@
     padding-left: 45px;
     padding-bottom: 234px;
     padding-right: 104px;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg-tablet@2x.jpg);
+    }
+    @media screen and (min-resolution: 3dppx) {
+      background-image: url(../images/hero-bg-tablet@3x.jpg);
+    }
   }
   @media screen and (min-width: $breakpointDesktop) {
     background-image: url(../images/hero-bg.jpg);
@@ -113,6 +126,13 @@
     padding-right: 96px;
     padding-bottom: 206px;
     padding-left: 96px;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg@2x.jpg);
+    }
+    @media screen and (min-resolution: 3dppx) {
+      background-image: url(../images/hero-bg@3x.jpg);
+    }
   }
 
   &__wrapper {

@@ -27,7 +27,6 @@
   }
 
   &__item {
-    width: 100%;
     display: flex;
     @media screen and (max-width: $breakpointBeeforeTablet) {
       margin-bottom: 30px;
@@ -40,9 +39,7 @@
 
   &__img {
     @media screen and (max-width: $breakpointBeeforeTablet) {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
     }
   }
 }

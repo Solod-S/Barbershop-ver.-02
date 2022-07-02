@@ -109,22 +109,57 @@
         <div class="about__wrapper container">
           <ul class="about__img-list">
             <li class="about__img-item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-img-2.jpg    1x,
+                    ./images/about-img-2@2x.jpg 2x,
+                    ./images/about-img-2@3x.jpg 3x,
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-2-tab.jpg    1x,
+                    ./images/about-img-2-tab@2x.jpg 2x,
+                    ./images/about-img-2-tab@3x.jpg 3x,
+                  "
+                  media="(min-width: 768px)"
+                />
+                  <img
                 class="about__img"
-                src="./images/about-img-2.jpg"
+                src="./images/about-img-2@3x.jpg"
                 alt="стричься"
                 width="270"
-                height="445"
               />
+                </picture>         
+
             </li>
             <li class="about__img-item">
-              <img
+                <picture>
+                <source
+                  srcset="
+                    ./images/about-img-1.jpg    1x,
+                    ./images/about-img-1@2x.jpg 2x,
+                    ./images/about-img-1@3x.jpg 3x,
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-1-tab.jpg    1x,
+                    ./images/about-img-1-tab@2x.jpg 2x,
+                    ./images/about-img-1-tab@3x.jpg 3x,
+                  "
+                  media="(min-width: 768px)"
+                />
+                  <img
                 class="about__img"
-                src="./images/about-img-1.jpg"
-                alt="бриться"
+                src="./images/about-img-1@3x.jpg"
+                alt="стричься"
                 width="270"
-                height="445"
               />
+                </picture>         
             </li>
           </ul>
           <article class="about-us">
@@ -238,11 +273,38 @@
           <h2 class="working-staff__title">Наши мастера</h2>
           <ul class="working-staff__list ">
             <li class="working-staff__item">
-                <img class="working-staff__img"
-                  src="./images/working-staff-1.jpg"
-                  alt="Джон"
-                  width="370"
+                  <picture>
+                <source
+                  srcset="
+                    ./images/working-staff-1.jpg    1x,
+                    ./images/working-staff-1@2x.jpg 2x,
+                    ./images/working-staff-1@3x.jpg 3x,
+                  "
+                  media="(min-width: 1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/working-staff-1-tab.jpg    1x,
+                    ./images/working-staff-1-tab@2x.jpg 2x,
+                    ./images/working-staff-1-tab@3x.jpg 3x,
+                  "
+                  media="(min-width: 768px)"
+                />
+                                <source
+                  srcset="
+                    ./images/working-staff-1-mob.jpg    1x,
+                    ./images/working-staff-1-mob@2x.jpg 2x,
+                    ./images/working-staff-1-mob@3x.jpg 3x,
+                  "
+                  media="(min-width: 320px)"
+                />
+                  <img
+                class="working-staff__img"
+                src="./images/working-staff-1@3x.jpg"
+                alt="Джон"
+                width="370"
+                 />
+                </picture>         
                 <div class="working-staff__thmb">
                   <h3 class="working-staff__name" lang="en">John Smith</h3>
                   <p class="working-staff__position" lang="en">Extreme Barber</p>
@@ -290,12 +352,39 @@
                   </ul>
                 </div>
             </li>
-            <li class="working-staff__item">        
-                <img class="working-staff__img"
-                  src="./images/working-staff-2.jpg"
-                  alt="Миша"
-                  width="370"
+            <li class="working-staff__item">     
+                  <picture>
+                <source
+                  srcset="
+                    ./images/working-staff-2.jpg    1x,
+                    ./images/working-staff-2@2x.jpg 2x,
+                    ./images/working-staff-2@3x.jpg 3x,
+                  "
+                  media="(min-width: 1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/working-staff-2-tab.jpg    1x,
+                    ./images/working-staff-2-tab@2x.jpg 2x,
+                    ./images/working-staff-2-tab@3x.jpg 3x,
+                  "
+                  media="(min-width: 768px)"
+                />
+                                <source
+                  srcset="
+                    ./images/working-staff-2-mob.jpg    1x,
+                    ./images/working-staff-2-mob@2x.jpg 2x,
+                    ./images/working-staff-2-mob@3x.jpg 3x,
+                  "
+                  media="(min-width: 320px)"
+                />
+                  <img
+                class="working-staff__img"
+                src="./images/working-staff-2@3x.jpg"
+                alt="Миша"
+                width="370"
+                 />
+                </picture>     
                 <div class="working-staff__thmb">
                   <h3 class="working-staff__name" lang="en">Michele Doe</h3>
                   <p class="working-staff__position" lang="en">Extreme Barber</p>
@@ -344,11 +433,38 @@
                 </div>
             </li >
             <li class="working-staff__item">
-                <img class="working-staff__img"
-                  src="./images/working-staff-3.jpg"
-                  alt="Алан"
-                  width="370"
-                />
+                <picture>
+                    <source
+                      srcset="
+                        ./images/working-staff-3.jpg    1x,
+                        ./images/working-staff-3@2x.jpg 2x,
+                        ./images/working-staff-3@3x.jpg 3x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/working-staff-3-tab.jpg    1x,
+                        ./images/working-staff-3-tab@2x.jpg 2x,
+                        ./images/working-staff-3-tab@3x.jpg 3x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                                    <source
+                      srcset="
+                        ./images/working-staff-3-mob.jpg    1x,
+                        ./images/working-staff-3-mob@2x.jpg 2x,
+                        ./images/working-staff-3-mob@3x.jpg 3x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                      <img
+                    class="working-staff__img"
+                    src="./images/working-staff-3@3x.jpg"
+                    alt="Алан"
+                    width="370"
+                    />
+                  </picture>                
                 <div class="working-staff__thmb">
                   <h3 class="working-staff__name" lang="en">Alan Black</h3>
                   <p class="working-staff__position" lang="en">Extreme Barber</p>
@@ -407,36 +523,140 @@
           <h2 class="visually__hidden">Галерея</h2>
           <ul class="gallery__list ">
             <li class="gallery__item">
-              <img class="gallery__img"
-                src="./images/gallery_1.jpg"
-                alt="Барбер за работой"
-                width="270"
-                height="360"
-              />
+                <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_1.jpg    1x,
+                        ./images/gallery_1@2x.jpg 2x,
+                        ./images/gallery_1@3x.jpg 3x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_1-tab.jpg    1x,
+                        ./images/gallery_1-tab@2x.jpg 2x,
+                        ./images/gallery_1-tab@3x.jpg 3x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                                    <source
+                      srcset="
+                        ./images/gallery_1-mob.jpg    1x,
+                        ./images/gallery_1-mob@2x.jpg 2x,
+                        ./images/gallery_1-mob@3x.jpg 3x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                      <img
+                    class="gallery__img"
+                    src="./images/gallery_1@3x.jpg"
+                    alt="Барбер за работой"
+                    width="270"
+                    />
+                  </picture>                
             </li>
             <li class="gallery__item">
-              <img class="gallery__img"
-                src="./images/gallery_2.jpg"
-                alt="Барбер за работой"
-                width="270"
-                height="360"
-              />
+                <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_2.jpg    1x,
+                        ./images/gallery_2@2x.jpg 2x,
+                        ./images/gallery_2@3x.jpg 3x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_2-tab.jpg    1x,
+                        ./images/gallery_2-tab@2x.jpg 2x,
+                        ./images/gallery_2-tab@3x.jpg 3x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                                    <source
+                      srcset="
+                        ./images/gallery_2-mob.jpg    1x,
+                        ./images/gallery_2-mob@2x.jpg 2x,
+                        ./images/gallery_2-mob@3x.jpg 3x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                      <img
+                    class="gallery__img"
+                    src="./images/gallery_2@3x.jpg"
+                    alt="Барбер за работой"
+                    width="270"
+                    />
+                  </picture>   
             </li>
             <li class="gallery__item">
-              <img class="gallery__img"
-                src="./images/gallery_3.jpg"
-                alt="Барбер за работой"
-                width="270"
-                height="360"
-              />
+                <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_3.jpg    1x,
+                        ./images/gallery_3@2x.jpg 2x,
+                        ./images/gallery_3@3x.jpg 3x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_3-tab.jpg    1x,
+                        ./images/gallery_3-tab@2x.jpg 2x,
+                        ./images/gallery_3-tab@3x.jpg 3x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                                    <source
+                      srcset="
+                        ./images/gallery_3-mob.jpg    1x,
+                        ./images/gallery_3-mob@2x.jpg 2x,
+                        ./images/gallery_3-mob@3x.jpg 3x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                      <img
+                    class="gallery__img"
+                    src="./images/gallery_3@3x.jpg"
+                    alt="Барбер за работой"
+                    width="270"
+                    />
+                  </picture>   
             </li>
             <li class="gallery__item">
-              <img class="gallery__img"
-                src="./images/gallery_4.jpg"
-                alt="Барбер за работой"
-                width="270"
-                height="360"
-              />
+                <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_4.jpg    1x,
+                        ./images/gallery_4@2x.jpg 2x,
+                        ./images/gallery_4@3x.jpg 3x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_4-tab.jpg    1x,
+                        ./images/gallery_4-tab@2x.jpg 2x,
+                        ./images/gallery_4-tab@3x.jpg 3x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                                    <source
+                      srcset="
+                        ./images/gallery_4-mob.jpg    1x,
+                        ./images/gallery_4-mob@2x.jpg 2x,
+                        ./images/gallery_4-mob@3x.jpg 3x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                      <img
+                    class="gallery__img"
+                    src="./images/gallery_4@3x.jpg"
+                    alt="Барбер за работой"
+                    width="270"
+                    />
+                  </picture>   
             </li>
           </ul>
         </div>
