@@ -1,7 +1,10 @@
 .gallery {
-  padding-bottom: 130px;
-  padding-top: 130px;
-
+  padding-bottom: 84px;
+  padding-top: 84px;
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-bottom: 130px;
+    padding-top: 130px;
+  }
   &__subtext {
     margin-bottom: 44px;
 
@@ -14,13 +17,29 @@
 
   &__list {
     display: flex;
-    flex-basis: calc(100% / 4 - 90px);
-    margin-right: -30px;
-    margin-top: -30px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $breakpointDesktop) {
+      flex-basis: calc(100% / 4 - 90px);
+      margin-right: -30px;
+      margin-top: -30px;
+    }
   }
 
   &__item {
-    margin-right: 30px;
-    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
