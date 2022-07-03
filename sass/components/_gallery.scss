@@ -1,10 +1,19 @@
 .gallery {
-  padding-bottom: 84px;
-  padding-top: 84px;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-bottom: 84px;
+    padding-top: 84px;
+  }
+
+  @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
   @media screen and (min-width: $breakpointDesktop) {
     padding-bottom: 130px;
     padding-top: 130px;
   }
+
   &__subtext {
     margin-bottom: 44px;
 
@@ -18,6 +27,12 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      flex-basis: calc(100% / 2 - 45px);
+      margin-right: -30px;
+      margin-top: -30px;
+    }
 
     @media screen and (min-width: $breakpointDesktop) {
       flex-basis: calc(100% / 4 - 90px);
@@ -29,7 +44,12 @@
   &__item {
     display: flex;
     @media screen and (max-width: $breakpointBeeforeTablet) {
+      max-width: 100%;
       margin-bottom: 30px;
+    }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      margin-right: 30px;
+      margin-top: 30px;
     }
     @media screen and (min-width: $breakpointDesktop) {
       margin-right: 30px;
@@ -40,6 +60,9 @@
   &__img {
     @media screen and (max-width: $breakpointBeeforeTablet) {
       width: 100%;
+    }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      width: 330px;
     }
   }
 }

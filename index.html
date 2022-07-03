@@ -599,7 +599,7 @@
           <h2 class="visually__hidden">Галерея</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <picture>
+              <picture class="img-wrapper">
                 <source
                   srcset="
                     ./images/gallery_1.jpg    1x,
@@ -739,7 +739,7 @@
       </section>
       <!-- /* -------------------------------------------------------------------------ENTRY&CONTACTS------------------------------------------------------------------------- */ -->
       <div class=" entry__wrapper" id="contacts">
-      <section class="entry">
+      <section class="entry container">
         <h2 class="entry__title">Онлайн-запись</h2>
         <form class="entry__form">
           <ul class="entry-form__list ">
@@ -764,34 +764,38 @@
       <section class="contacts container">
         <div class="contacts__thmb">
           <h2 class="contacts__title">Контакты</h2>
-          <address class="contacts__adress">
-            <ul class="contacts__list ">
-              <li class="contacts__item">
-                <a class="contacts__link "
-                  href="https://goo.gl/maps/nZbFwnbhuFcWLwp17"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >   <svg class="contacts__svg" width="24px" height="24px">
-                        <use href="./images/symbol-defs.svg#icon-map-pin"></use>
-                      </svg>
-                      ул. Васильковая, 7А Киев, 08132</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link " href="tel:+380441111111">
+            <div class="contacts__tablet-wrapper">
+              <address class="contacts__adress">
+                <ul class="contacts__list ">
+                  <li class="contacts__item">
+                    <a class="contacts__link "
+                      href="https://goo.gl/maps/nZbFwnbhuFcWLwp17"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >   <svg class="contacts__svg" width="24px" height="24px">
+                            <use href="./images/symbol-defs.svg#icon-map-pin"></use>
+                          </svg>
+                          ул. Васильковая, 7А Киев, 08132</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link " href="tel:+380441111111">
+                          <svg class="contacts__svg" width="24px" height="24px">
+                            <use href="./images/symbol-defs.svg#icon-tell-pin"></use>
+                          </svg>+38 044 111 11 11</a></li>
+                  <li class="contacts__item">
+                    <a class="contacts__link contacts__link--underline" href="maito:barbershop@email.com">
                       <svg class="contacts__svg" width="24px" height="24px">
-                        <use href="./images/symbol-defs.svg#icon-tell-pin"></use>
-                      </svg>+38 044 111 11 11</a></li>
-              <li class="contacts__item">
-                <a class="contacts__link contacts__link--underline" href="maito:barbershop@email.com">
-                  <svg class="contacts__svg" width="24px" height="24px">
-                        <use href="./images/symbol-defs.svg#icon-mail-pin"></use>
-                      </svg>barbershop@email.com</a>
-              </li>
-            </ul>
-          </address>
-          <p class="contacts__working-time --gray-strip">время работы</p>
-          <p class="contacts__time">Ежедневно с 9:00 до 22:00</p>
+                            <use href="./images/symbol-defs.svg#icon-mail-pin"></use>
+                          </svg>barbershop@email.com</a>
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts__working-time-wrapper">
+                <p class="contacts__working-time --gray-strip">время работы</p>
+                <p class="contacts__time">Ежедневно с 9:00 до 22:00</p>
+              </div>
+            </div>
         </div>
       </section>
     </main>
