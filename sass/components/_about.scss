@@ -24,11 +24,9 @@
       flex-direction: column;
     }
   }
-
   &__img {
-    width: 330px;
+    max-width: 330px;
   }
-
   &__img-item:not(:last-child) {
     margin-right: 30px;
     @media screen and (min-width: $breakpointBeeforeTablet) and (max-width: $breakpointBeeforeDesktop) {

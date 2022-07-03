@@ -21,6 +21,8 @@
     }
     @media screen and (min-width: $breakpointBeeforeTablet) and (max-width: $breakpointBeeforeDesktop) {
       flex-direction: column-reverse;
+      padding-left: 25px;
+      padding-right: 25px;
     }
     @media screen and (min-width: $breakpointDesktop) {
       justify-content: center;

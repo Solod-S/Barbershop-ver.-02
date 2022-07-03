@@ -783,7 +783,7 @@ a {
 }
 
 .about__img {
-  width: 330px;
+  max-width: 330px;
 }
 
 .about__img-item:not(:last-child) {
@@ -1079,6 +1079,8 @@ a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -1213,14 +1215,40 @@ a {
   background: #f7f7f7;
   max-width: 1280px;
   margin: 0 auto;
-  padding-bottom: 84px;
-  padding-top: 84px;
+}
+
+@media screen and (max-width: 767px) {
+  .working-staff {
+    padding-bottom: 84px;
+    padding-top: 84px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .working-staff {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .working-staff {
     padding-bottom: 130px;
     padding-top: 130px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .working-staff__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
   }
 }
 
@@ -1255,6 +1283,15 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .working-staff__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .working-staff__list {
     -ms-flex-preferred-size: calc(100% / 3 - 60px);
@@ -1274,6 +1311,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .working-staff__item {
+    margin-bottom: 64px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .working-staff__item {
     margin-right: 30px;
@@ -1285,6 +1328,18 @@ a {
 .working-staff__img {
   margin-bottom: 30px;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .working-staff__img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 .working-staff__name {
