@@ -1,12 +1,10 @@
 .header {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
-    display: none;
-  }
-
   position: absolute;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: $breakpointBeeforeTablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .logo {
@@ -16,6 +14,9 @@
 
 .navigation {
   &__wrapper {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: none;
+    }
     display: flex;
     @media screen and (min-width: $breakpointBeeforeDesktop) {
       align-items: center;

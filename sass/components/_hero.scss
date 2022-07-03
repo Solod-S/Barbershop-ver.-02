@@ -1,24 +1,3 @@
-.mobile-menu {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 112px;
-  @media screen and (min-width: $breakpointBeeforeTablet) {
-    display: none;
-  }
-  // .mobile-menu__logo {
-  // }
-  &__btn {
-    background-color: transparent;
-    border: none;
-  }
-  // .mobile-menu__svg {
-  // }
-  // .mobile-menu__icon-open {
-  // }
-  // .mobile-menu__icon-close {
-  // }
-}
-
 .hero {
   &__main-wrapper {
     display: flex;

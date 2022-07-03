@@ -17,6 +17,52 @@
     <!-- /* --------------------------------------------------------------------------HEADER------------------------------------------------------------------------- */ -->
 
     <header class="header" id="header">
+      <div class="mobile" data-menu>
+              <ul class="mobile__list">
+            <li class="mobile__item">
+              <a class="mobile__link" href="./index.html#about-us">О нас</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link" href="#prices">Услуги и цены</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link" href="#working-staff">Мастера</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+            <div class="mobile-panel">
+              <a class="mobile-panel__tell" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <a class="mobile-panel__btn --button" href="#contacts"
+                >онлайн-запись</a
+              >
+            </div>
+            <ul class="mobile-social --black-strip">
+              <li class="mobile-social__item">
+                <a
+                  class="mobile-social__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  lang="en"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  class="mobile-social__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  lang="en"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+      </div>
       <div class="container navigation__wrapper">
         <a class="logo" href="./index.html"
           ><img src="./images/logo.svg" width="67px" alt="логотип"
@@ -79,7 +125,7 @@
           </div>
 
           <div class="our-story">
-            <div class="mobile-menu">
+            <div class="mobile-menu" data-menu-button>
               <img
                 class="mobile-menu__logo"
                 src="./images/logo_mobile.svg"
@@ -91,7 +137,7 @@
                 type="button"
                 aria-expanded="false"
                 data-menu-button
-              >
+               >
                 <svg
                   class="mobile-menu__svg"
                   width="40px"
@@ -837,8 +883,7 @@
          </div>
       </section>
     </footer>
-  </body>
-</html>
-    </main>
+    <script src="./js/menu.js"></script>
+  
   </body>
 </html>
