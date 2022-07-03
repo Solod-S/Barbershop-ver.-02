@@ -864,7 +864,6 @@ a {
   background-image: url(../images/prices-bg.svg);
   background-size: cover;
   max-width: 1280px;
-  max-width: 100%;
   margin: 0 auto;
   background-color: #111319;
 }
