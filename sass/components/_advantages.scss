@@ -1,31 +1,49 @@
 .advantages {
-  padding-top: 84px;
-  padding-bottom: 84px;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: $breakpointBeeforeTablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   @media screen and (min-width: $breakpointDesktop) {
     padding-top: 130px;
     padding-bottom: 130px;
   }
+
   &__wrapper {
+    display: flex;
     @media screen and (max-width: $breakpointBeeforeTablet) {
-      display: flex;
+      flex-direction: column-reverse;
+    }
+    @media screen and (min-width: $breakpointBeeforeTablet) and (max-width: $breakpointBeeforeDesktop) {
       flex-direction: column-reverse;
     }
     @media screen and (min-width: $breakpointDesktop) {
-      display: flex;
       justify-content: center;
     }
   }
 
   &__list {
+    display: flex;
+    max-width: 370px;
+    flex-wrap: wrap;
+
     @media screen and (max-width: $breakpointBeeforeTablet) {
       margin-left: auto;
       margin-right: auto;
     }
 
-    display: flex;
-    width: 370px;
-    flex-wrap: wrap;
-    margin-right: 130px;
+    @media screen and (min-width: $breakpointBeeforeTablet) and (max-width: $breakpointBeeforeDesktop) {
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-right: 130px;
+    }
   }
 
   &__item {
@@ -80,7 +98,10 @@
 .advantages-story {
   max-width: 500px;
   @media screen and (max-width: $breakpointBeeforeTablet) {
-    margin-bottom: 84x;
+    margin-bottom: 84px;
+  }
+  @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+    margin-bottom: 44px;
   }
 
   &__subtext {
@@ -108,13 +129,19 @@
   }
 
   &__downtext {
-    margin-bottom: 20px;
-
     font-weight: 400;
     font-size: 18px;
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
+
+    // @media screen and (max-width: $breakpointBeeforeTablet) {
+    //   margin-bottom: 20px;
+    // }
+
+    // @media screen and (min-width: $breakpointDesktop) {
+    //   margin-bottom: 20px;
+    // }
   }
 }

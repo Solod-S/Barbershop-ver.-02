@@ -1,32 +1,38 @@
 .prices {
   background-image: url(../images/prices-bg.svg);
   background-size: cover;
+  max-width: 1280px;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 84px;
-  padding-bottom: 84px;
+
   background-color: #111319;
 
-  @media screen and (min-width: $breakpointBeeforeDesktop) {
-    background-image: url(../images/prices-bg.svg);
-    background-size: cover;
-    max-width: 1280px;
-    margin: 0 auto;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+  @media screen and (min-width: $breakpointBeeforeTablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
     padding-top: 130px;
     padding-bottom: 130px;
-    background-color: #111319;
   }
 
   &__wrapper {
     margin-bottom: 50px;
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (min-width: $breakpointBeeforeTablet) and (max-width: $breakpointBeeforeDesktop) {
+      padding: 30px 40px;
+    }
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       background: linear-gradient(
         180deg,
         #171a24 0%,
         rgba(23, 26, 36, 0.2) 100%
       );
     }
-    @media screen and (min-width: $breakpointBeeforeTablet) {
+    @media screen and (min-width: $breakpointBeeforeDesktop) {
       display: flex;
     }
   }
@@ -79,7 +85,11 @@
   }
 
   &--left {
-    @media screen and (min-width: $breakpointBeeforeDesktop) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      margin-bottom: 20px;
+    }
+    margin-bottom: 20px;
+    @media screen and (min-width: $breakpointDesktop) {
       background: linear-gradient(
         180deg,
         #171a24 0%,
@@ -88,7 +98,7 @@
     }
   }
   &--right {
-    @media screen and (min-width: $breakpointBeeforeDesktop) {
+    @media screen and (min-width: $breakpointDesktop) {
       background: linear-gradient(
         180deg,
         #090b13 0%,
