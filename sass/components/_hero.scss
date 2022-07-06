@@ -134,11 +134,15 @@
     margin-bottom: 20px;
 
     font-weight: 700;
-    font-size: 38px;
+
     line-height: 1.18;
     letter-spacing: 0.05em;
 
     color: var(--primary-text-banner-color);
+    @media screen and (min-width: 305px) {
+      font-size: 38px;
+    }
+
     @media screen and (min-width: $breakpointTell) {
       font-size: 48px;
     }

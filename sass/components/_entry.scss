@@ -7,7 +7,11 @@
     flex-direction: column;
   }
 }
-
+.entry__form {
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    text-align: center;
+  }
+}
 .entry {
   background: #191c26;
 
@@ -59,20 +63,15 @@
     text-transform: uppercase;
 
     color: rgba(157, 164, 189, 0.4);
+
     @media screen and (min-width: $breakpointDesktop) {
       width: 264px;
     }
   }
 
   &__list {
-    margin-bottom: 44px;
-  }
-
-  &__thmb {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      flex-direction: column;
-    }
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 44px;
   }
 
@@ -97,11 +96,23 @@
     }
   }
   &__item {
-    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
       width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 44px;
+      }
+    }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      &:not(:last-child) {
+        width: calc(50% - 15px);
+        margin-bottom: 44px;
+      }
+      &:last-child {
+        width: 100%;
+      }
     }
 
-    &:not(:last-child) {
+    &:first-child {
       @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
         margin-right: 30px;
       }
@@ -149,7 +160,7 @@
     border-radius: 25px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (max-width: $breakpointBeeforeTablet) {
-      display: block;
+      display: inline-block;
     }
 
     &:hover,
