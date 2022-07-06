@@ -1,3 +1,13 @@
+.entry__wrapper {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
+    flex-direction: column;
+  }
+}
+
 .entry {
   background: #191c26;
 
@@ -14,16 +24,6 @@
     padding: 130px 40px 193px 57px;
     width: calc(50% + 15px);
     padding-top: 130px;
-  }
-
-  &__wrapper {
-    display: flex;
-    max-width: 1280px;
-    margin: 0 auto;
-
-    @media screen and (max-width: $breakpointBeeforeDesktop) {
-      flex-direction: column;
-    }
   }
 
   &__title {
