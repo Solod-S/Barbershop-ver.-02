@@ -25,9 +25,11 @@
   }
 
   &__list {
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
     @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
       flex-basis: calc(100% / 2 - 45px);
       margin-right: -30px;
@@ -64,5 +66,14 @@
     @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
       width: 330px;
     }
+  }
+}
+
+.slick-list.draggable {
+  @media screen and (min-width: $breakpointBeeforeTablet) and (max-width: $breakpointBeeforeDesktop) {
+    padding-left: 20px;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-left: 29px;
   }
 }

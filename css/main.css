@@ -1560,6 +1560,7 @@ a {
 }
 
 .gallery__list {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1568,6 +1569,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1624,6 +1626,18 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery__img {
     width: 330px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .slick-list.draggable {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slick-list.draggable {
+    padding-left: 29px;
   }
 }
 
