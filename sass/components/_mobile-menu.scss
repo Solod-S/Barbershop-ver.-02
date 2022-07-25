@@ -1,10 +1,12 @@
 .mobile {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding-top: 65px;
   padding-left: 32px;
   padding-right: 65px;
-  transform: translate(0, -100%);
+  transform: translate(-150%, -32px);
+  height: 100vh;
 
   align-items: baseline;
 
@@ -17,6 +19,7 @@
 }
 
 .mobile.--is-open {
+  height: 100vh;
   transform: translate(0, -32px);
 }
 .mobile__list {
@@ -27,7 +30,7 @@
 }
 .mobile__link {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 36px;
   line-height: calc(25 / 18);
 
   text-align: center;
@@ -37,6 +40,7 @@
 }
 .mobile-panel {
   margin-bottom: 10px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +49,7 @@
   margin-bottom: 10px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   line-height: calc(25 / 18);
 
   letter-spacing: 0.1em;
