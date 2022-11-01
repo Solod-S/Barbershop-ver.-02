@@ -1609,7 +1609,7 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .entry-form__item:first-child {
-    margin-right: 30px;
+    margin-right: 1rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1619,7 +1619,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .entry-form__item:first-child {
-    margin-right: 30px;
+    margin-right: 1rem;
   }
 }
 .entry-form__input::-webkit-input-placeholder {

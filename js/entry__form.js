@@ -10,7 +10,7 @@ const entryForm = {
     const { name, feedback, tel } = event.currentTarget.elements;
     console.log(event.currentTarget.elements.name.value);
     event.preventDefault();
-    if (name.value === "" || feedback.value === "" || tel.value === "") {
+    if (!name.value || !feedback.value || !tel.value) {
       Notiflix.Notify.failure("Внимание! Все поля должны быть заполнены.");
       console.log(`Внимание! Все поля должны быть заполнены`);
       return;

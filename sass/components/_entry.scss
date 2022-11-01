@@ -115,7 +115,7 @@
 
     &:first-child {
       @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
-        margin-right: 30px;
+        margin-right: 1rem;
       }
     }
 
@@ -125,7 +125,7 @@
       }
 
       @media screen and (min-width: $breakpointDesktop) {
-        margin-right: 30px;
+        margin-right: 1rem;
       }
     }
   }
