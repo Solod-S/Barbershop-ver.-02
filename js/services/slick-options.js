@@ -34,19 +34,8 @@ $(function () {
           speed: 1000,
         },
       },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //   },
-      // },
     ],
   });
 });
 
-// $(document).ready(function () {
-//   $('.your-class').slick({
-//     setting-name: setting-value
-//   });
-// });
+
