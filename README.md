@@ -18,7 +18,7 @@ Sass, and working with various libraries like Lodash, Notiflix...
 ## Demo
 
 Check out the live demo of the website:
-[Barbershop Website Demo](https://github.com/Solod-S/Barbershop-ver.-02)
+[Barbershop Website Demo](https://solod-s.github.io/Barbershop-ver.-02/https://solod-s.github.io/Barbershop-ver.-02/)
 
 ## Responsive Design and semantic layout
 
